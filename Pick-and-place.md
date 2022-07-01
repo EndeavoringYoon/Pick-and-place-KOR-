@@ -1,6 +1,6 @@
 # ROS
 
-[ROS](./Pick-and-place/ROS 설치방법.md)
+[ROS](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/main/Pick-and-place/Dynamixel%20%EA%B4%80%EB%A0%A8.md)
 
 [Dynamixel](./Pick-and-place/Dynamixel관련.md)
 
