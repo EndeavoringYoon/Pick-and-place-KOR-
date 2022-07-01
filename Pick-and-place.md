@@ -1,6 +1,6 @@
 # ROS
 
-[ROS](Pick-and-place/ROS설치방법.md)
+[ROS](Pick-and-place-KOR-/Pick-and-place/ROS설치방법.md)
 
 [Dynamixel](Pick-and-place/Dynamixel관련.md)
 
