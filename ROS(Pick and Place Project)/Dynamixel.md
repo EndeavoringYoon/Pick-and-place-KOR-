@@ -60,7 +60,7 @@ Dynamixel Wizard 2.0을 이용해서 모터가 정상적으로 연결되어 있�
 
 여기서 받으시면 되고, 
 
-![Screenshot from 2022-06-23 19-52-09.png](Dynamixel%20d0d68fcf1443460c8de148df3f84747c/Screenshot_from_2022-06-23_19-52-09.png)
+![Screenshot from 2022-06-23 19-52-09.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/Dynamixel/Screenshot_from_2022-06-23_19-52-09.png)
 
 이런 식으로 Protocol 2.0 선택 후 
 
@@ -77,7 +77,7 @@ ls /dev/tty*
 
  위 코드를 이용하여 찾은 포트 번호를(OpenCR의 경우에는 ttyACM0를, U2D2의 경우에는 ttyUSB0의 형태로 나오게 됩니다.) 선택 후 baudrate와 id는 전체로 놓고 한번 검색하시면 찾을 수 있습니다. 이후에 option에 다시 들어가셔서 찾으신 baudrate값으로 변경하시면 이후의 검색에서는 더 빠르게 찾을 수 있습니다.
 
-![Screenshot from 2022-06-23 20-04-06.png](Dynamixel%20d0d68fcf1443460c8de148df3f84747c/Screenshot_from_2022-06-23_20-04-06.png)
+![Screenshot from 2022-06-23 20-04-06.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/Dynamixel/Screenshot_from_2022-06-23_20-04-06.png)
 
 Wizard에서는 토크를 켜고 옆의 붉은색 막대기를 움직여 모터의 각도를 움직여볼 수 있고, 토크를 끈 뒤에는 ID나 control 방법 등 여러 설정을 바꿀 수 있습니다.
 
