@@ -51,4 +51,4 @@ rviz에서 로봇의 이동이나 현 상태를 파악하기 위해서, 또는 p
 
 후 path_planning에서 진행해주시면 됩니다.
 
-자세한 코드는 [Codes](Codes%20e7972d692b0f4c6d9d1c1cf6a76b97bb.md)를 참고해주시기 바랍니다.
+자세한 코드는 [Codes](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/Codes.md)를 참고해주시기 바랍니다.
