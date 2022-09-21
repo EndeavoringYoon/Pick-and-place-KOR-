@@ -12,7 +12,7 @@
 
 앞서 언급했지만 workbench의 경우 noetic에 대해서 업데이트를 진행하긴 했는데 stable한지는 장담할 수 없습니다. 업데이트가 중단되었다는 이야기가 있습니다.
 
-![prepare neotic release에서 끝난 것을 볼 수 있습니다.](%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC1-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%87%E1%85%AE%E1%84%90%E1%85%A5%20gazebo%20%E1%84%82%E1%85%A2%20%E1%84%8C%E1%85%A9%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5%2074a3fa34270b44809785dc76c32fa1f5/Untitled.png)
+![prepare neotic release에서 끝난 것을 볼 수 있습니다.](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%951-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0%20gazebo%20%EB%82%B4%20%EC%A1%B0%EC%9E%91%EA%B9%8C%EC%A7%80/Untitled.png)
 
 prepare neotic release에서 끝난 것을 볼 수 있습니다.
 
@@ -42,7 +42,7 @@ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch
 
 과 rqt를 이용해서 dynamixel을 조종해보는 방법이 제시되고 있는데 
 
-![error.png](%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC1-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%87%E1%85%AE%E1%84%90%E1%85%A5%20gazebo%20%E1%84%82%E1%85%A2%20%E1%84%8C%E1%85%A9%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5/error.png)
+![error.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%951-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0%20gazebo%20%EB%82%B4%20%EC%A1%B0%EC%9E%91%EA%B9%8C%EC%A7%80/error.png)
 
 다음과 같은 에러가 뜰 수 있습니다.
 
@@ -66,7 +66,7 @@ rqt의 경우 source devel/setup.bash를 끝낸 터미널 창에서 여시기 �
 
 # 하드웨어 고려 사항
 
-![Openmanipulator-X description ](%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC1-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%87%E1%85%AE%E1%84%90%E1%85%A5%20gazebo%20%E1%84%82%E1%85%A2%20%E1%84%8C%E1%85%A9%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5%2074a3fa34270b44809785dc76c32fa1f5/manipulatorX.png)
+![Openmanipulator-X description ](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%951-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0%20gazebo%20%EB%82%B4%20%EC%A1%B0%EC%9E%91%EA%B9%8C%EC%A7%80/manipulatorX.png)
 
 Openmanipulator-X description 
 
@@ -112,13 +112,13 @@ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
 
 (여담이지만 gazebo 자체의 물리엔진 문제라는 이야기도 있습니다.)
 
-![Screenshot from 2022-07-19 15-24-39.png](%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC1-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%87%E1%85%AE%E1%84%90%E1%85%A5%20gazebo%20%E1%84%82%E1%85%A2%20%E1%84%8C%E1%85%A9%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5%2074a3fa34270b44809785dc76c32fa1f5/Screenshot_from_2022-07-19_15-24-39.png)
+![Screenshot from 2022-07-19 15-24-39.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%951-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0%20gazebo%20%EB%82%B4%20%EC%A1%B0%EC%9E%91%EA%B9%8C%EC%A7%80/Screenshot_from_2022-07-19_15-24-39.png)
 
 open_manipulator/open_manipulator_description에 있는 urdf.xacro 파일 안에 보시면 effort값이 1로 설정되어 있는 것을 확인할 수 있습니다. 
 
 처음에 controller를 사용할 때 controller에서 지속적으로 0.00으로 값을 보내고 있어 진동이 발생하는 것 같습니다. controller 패키지를 사용하지 않고 저희가 독자적으로 command를 보내거나, moveit을 사용하게 되면 떨림이 없어지니 걱정하지 않으셔도 됩니다.
 
-![Screenshot from 2022-07-19 15-38-51.png](%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC1-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%87%E1%85%AE%E1%84%90%E1%85%A5%20gazebo%20%E1%84%82%E1%85%A2%20%E1%84%8C%E1%85%A9%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5%2074a3fa34270b44809785dc76c32fa1f5/Screenshot_from_2022-07-19_15-38-51.png)
+![Screenshot from 2022-07-19 15-38-51.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%951-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0%20gazebo%20%EB%82%B4%20%EC%A1%B0%EC%9E%91%EA%B9%8C%EC%A7%80/Screenshot_from_2022-07-19_15-38-51.png)
 
 # 2. 기존 패키지를 활용한 컨트롤러 파일 만들기
 
