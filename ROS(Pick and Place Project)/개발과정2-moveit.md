@@ -30,7 +30,7 @@ roslaunch moveit_setup_assistant setup_assitant.launch
 
 ## 2-1. Creating Moveit
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled.png)
 
 이런 형태의 ui가 여러분을 맞이하게 됩니다.
 
@@ -46,33 +46,33 @@ Self Collisions로 넘어가시면 됩니다.
 
 Planning Groups에서는 
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%201.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%201.png)
 
 ros-seminar pdf에서는 이렇게 안내해주고 있는데, kdl_kinematics_plugin의 경우 6DOF를 사용하는데 저희 Openmanipulator는 4DOF기 때문에 불필요한(기구학적 영향을 미치지 못하는) joint를 2개 추가하거나, 다른 kinematic solver를 사용해야 합니다. 여기서 저희는 joint를 추가하는 대신 아까 설치한 openmanipulator/IKFastplugin을 선택하여 사용하도록 하겠습니다.
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%202.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%202.png)
 
 kdl의 경우 demo.launch에서 정상 작동하긴 하나, 나중에 보실 파란색 구가 움직이지 않는 문제와 함께 이후에 move_group.compute_cartesian_path가 계산되지 않는 문제가 있습니다.
 
 ### Editing Joint Collection
 
-![Untitled]../(%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%203.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%203.png)
 
 Add joints에서도 joint1,2,3,4만 arm으로, gripper의 경우 gripper, gripper_sub만 선택해줍니다. end_effector_joint의 경우 urdf로 가서 값을 좀 바꿔줘야 합니다.
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%204.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%204.png)
 
 (end_effector_link가 link5에 child link로 선언이 되어 있는데, 그 link의 collision 범위가 end effector link를 포함해서 설정되는 문제가 있어 end effector link(사진의 붉은색 상자)가 너무 앞에 있으면 gripper를 열고 물체를 잡으러 이동하는 명령을 내릴 때 물체 용도로 스폰하는 박스가 들어가지 않는 문제가 있습니다.) 저는 0.06으로 설정했는데 편하신 값으로 맞춰주시면 되겠습니다. Default 값은 0.126입니다. catkin_ws/src/open_manipulator/open_manipulator_description/urdf/open_manipulator.urdf.xacro로 들어가셔서 end effector joint의 설정값을 바꿔주시면 됩니다.
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%205.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%205.png)
 
 planning group으로 gripper도 추가해 주시되, 다른 설정은 none으로 해주시면 됩니다(Default planner같은 경우 이후에 RRTConnect로 자동으로 설정되어 동작합니다). joint는 gripper, gripper_sub 선택해주시면 되겠습니다.
 
 ## 2-3. Define Robot Poses
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%206.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%206.png)
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%207.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%207.png)
 
 Define Robot Poses는 자유이나 arm의 init(0,0,0,0), home(0,-1.05,0.35,0.7), gripper의 open(0.015, 0.015), close(0.0, 0.0) 설정해주시면 나중에 좋습니다.
 
@@ -80,7 +80,7 @@ Define Robot Poses는 자유이나 arm의 init(0,0,0,0), home(0,-1.05,0.35,0.7),
 
 End Effectors는 pdf와 다르게 설정했습니다.
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%208.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%208.png)
 
 end effector group은 gripper, connected link는 link5, parent group은 arm으로 해주시면 됩니다.
 
@@ -92,7 +92,7 @@ Passive Joints는 pdf와 다르게 설정하지 않고 넘어가겠습니다.
 
 ## 2-6. Controllers
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%209.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%209.png)
 
 Auto Add FollowJointsTrajectory Controllers를 하셔도 되지만, Add controller로 직접 설정해주시는 걸 권해드립니다. Controller type은 gripper의 경우 effort controllers로 고정이나 arm_controller의 경우 어느 정도 유연성이 있는 것 같습니다. FollowJointTrajectory나 position_controllers 정도로 설정해 주시면 됩니다.
 
@@ -110,4 +110,4 @@ roslaunch (folder name) demo_gazebo.launch # rviz와 gazebo 모두 실행
 
 이후 실행해보시면 잘 동작합니다.
 
-![Untitled](../%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC2-moveit%20cdf6e65a1602424f8d0b330072d1f8aa/Untitled%2010.png)
+![Untitled](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/%EA%B0%9C%EB%B0%9C%EA%B3%BC%EC%A0%952-moveit/Untitled%2010.png)
