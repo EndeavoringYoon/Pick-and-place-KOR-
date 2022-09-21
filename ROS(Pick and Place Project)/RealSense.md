@@ -43,15 +43,15 @@ rviz
 
 로 rviz를 켠 뒤에, 
 
-![rviz.png](RealSense%20844320b6c63a4483846256d3882e4f37/rviz.png)
+![rviz.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/RealSense/rviz.png)
 
 add에서 image를 선택해서 생성한 후, image topic을 바꿔가면서 잡히는지를 확인할 수 있습니다.
 
-![color image를 받아왔을 때](RealSense%20844320b6c63a4483846256d3882e4f37/rviz_1.png)
+![color image를 받아왔을 때](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/RealSense/rviz_1.png)
 
 color image를 받아왔을 때
 
-![depth image를 받아왔을 때](RealSense%20844320b6c63a4483846256d3882e4f37/rviz_2.png)
+![depth image를 받아왔을 때](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/RealSense/rviz_2.png)
 
 depth image를 받아왔을 때
 
@@ -71,6 +71,6 @@ roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
 
 다시 rviz에서 Add-pointcloud2(1도 있지만 2가 더 작동이 잘 된다고 합니다)를 한 뒤 pointcloud2의 topic과 global options의 fixed frame을 설정해주시면
 
-![rviz_3.png](RealSense%20844320b6c63a4483846256d3882e4f37/rviz_3.png)
+![rviz_3.png](https://github.com/EndeavoringYoon/Pick-and-place-KOR-/blob/master/ROS(Pick%20and%20Place%20Project)/RealSense/rviz_3.png)
 
 pointcloud도 잘 실행됨을 알 수 있습니다.
