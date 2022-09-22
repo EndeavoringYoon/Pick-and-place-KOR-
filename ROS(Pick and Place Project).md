@@ -1,12 +1,11 @@
 # ROS(Pick and Place Project)
 
-[https://github.com/EndeavoringYoon/Pick-and-place-KOR-](https://github.com/EndeavoringYoon/Pick-and-place-KOR-)
 
 - 이 프로젝트는 2022년 6월부터 9월까지 진행되었습니다
 - 사용된 개발환경:
     - Ubuntu 20.04 LTS & ROS Noetic
     - Openmanipulator-X(with 5 XM-430 motors)
-    - Colab
+    - Realsense D435i
 - 주의사항:
     - 사용된 Dynamixel_workbench의 경우 noetic 버전까지 작동하는 것은 확인했습니다만, noetic release가 완료되기 전에 업데이트가 종료된 것으로 알고 있습니다. 에러 발생 가능성을 염두에 두시기 바랍니다.
 - 참여자:
