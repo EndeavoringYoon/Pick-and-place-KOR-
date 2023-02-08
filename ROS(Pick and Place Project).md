@@ -13,7 +13,7 @@
     - Project Leader: 박경민, 신예담
     - Follower: 전영진, 신성준, 최경찬, 이강우, 박재한, 김지훈, 김우진
 
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s)
+[![Video Label](http://img.youtube.com/vi/MAJIyTA4dxU/0.jpg)](https://youtu.be/MAJIyTA4dxU)
 
 [ROS](ROS(Pick%20and%20Place%20Project)/ROS.md)
 
