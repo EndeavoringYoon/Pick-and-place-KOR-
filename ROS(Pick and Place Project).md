@@ -12,7 +12,8 @@
     - Project Manager: 윤지환, 박준성
     - Project Leader: 박경민, 신예담
     - Follower: 전영진, 신성준, 최경찬, 이강우, 박재한, 김지훈, 김우진
-https://www.youtube.com/watch?v=MAJIyTA4dxU
+
+[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s)
 
 [ROS](ROS(Pick%20and%20Place%20Project)/ROS.md)
 
