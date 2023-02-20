@@ -14,7 +14,7 @@
     - Follower: 전영진, 신성준, 최경찬, 이강우, 박재한, 김지훈, 김우진
 
 
-- Youtube link(사진을 클릭하시면 됩니다)
+## Youtube link(사진을 클릭하시면 됩니다)
 
 
 [![Video Label](http://img.youtube.com/vi/MAJIyTA4dxU/0.jpg)](https://youtu.be/MAJIyTA4dxU)
